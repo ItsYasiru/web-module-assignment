@@ -1,0 +1,9 @@
+@import "./variables";
+
+@mixin component {
+  border-radius: 5px;
+
+  color: $component__color;
+  box-shadow: component__shadow(5px);
+  background-color: $component__background;
+}

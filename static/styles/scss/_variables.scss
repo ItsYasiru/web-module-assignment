@@ -1,0 +1,24 @@
+// Fonts
+$font__primary: "Agency FB";
+$font__fallback: "Segoe UI", "Tahoma", "Geneva", "Verdana", "sans-serif";
+
+$font__family: $font__primary, $font__fallback;
+
+// Boundries
+
+$bound__x: 2048px;
+$bound__y: 1080px;
+
+// Color palette
+
+$primary__color: #000000;
+$primary__background: #eff0f5;
+
+$component__color: #000000;
+$component__background: #ffffff;
+
+$secondary__color: #00000080;
+
+@function component__shadow($area: 20px) {
+  @return 0 0 $area rgb(0 0 0 / 30%);
+}
