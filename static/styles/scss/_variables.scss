@@ -14,11 +14,18 @@ $bound__y: 1080px;
 $primary__color: #000000;
 $primary__background: #eff0f5;
 
+$secondary__color: #00000080;
+
 $component__color: #000000;
 $component__background: #ffffff;
 
-$secondary__color: #00000080;
+$component-secondary__color: #6c56c5;
 
-@function component__shadow($area: 20px) {
-  @return 0 0 $area rgb(0 0 0 / 30%);
+@function component__shadow($area: 20px, $color: rgba(0, 0, 0, 0.3)) {
+  @return 0 0 $area $color;
 }
+
+// Responsive breakpoints
+
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 992px;
