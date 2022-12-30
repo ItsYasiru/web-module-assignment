@@ -1,3 +1,31 @@
-<form>
-  <h1>Test</h1>
-</form>
+<div class="LoginForm">
+  <form>
+    <fieldset>
+      <label for="login_form-email">Email</label>
+      <input id="login_form-email" type="email" />
+    </fieldset>
+
+    <fieldset>
+      <label for="login_form-password">Password</label>
+      <input id="login_form-password" type="password" />
+    </fieldset>
+
+    <button onclick="submitLoginForm()">Submit</button>
+
+    <span class="LoginForm-label__railing">
+      <a href="/recover-account">Forgot Password?</a>
+      <span></span>
+      <label>or login with</label>
+    </span>
+
+    <div class="LoginForm-button__railing">
+      <button><img src="/static/media/google.png" />Google</button>
+      <button><img src="/static/media/facebook.png" />Facebook</button>
+    </div>
+
+    <label class="LoginForm-signup__ribbon">
+      Don't have an account?
+      <a href="/signup.html">Create one</a>
+    </label>
+  </form>
+</div>

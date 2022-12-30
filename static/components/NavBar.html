@@ -1,4 +1,4 @@
-<nav>
+<nav class="NavBar">
   <header>
     <h1>Fakes</h1>
     <span><h1>Fakes</h1></span>
@@ -12,14 +12,15 @@
   </ul>
 
   <div class="userPanel">
-    <label id="x-data-username">
-      <a href="/login.html">Login</a><span></span>
+    <label x-hide-mobile="true">
+      <a id="x-data-username" href="/login.html">Login</a>
+      <span></span>
     </label>
 
     <span class="image__container">
       <img
-        width="30"
-        height="30"
+        width="35"
+        height="35"
         id="x-data-user__profile__picture"
         alt="Profile picture"
         src="/static/media/profile-picture.png"
