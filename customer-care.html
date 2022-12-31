@@ -9,17 +9,21 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./static/styles/css/index.css"
+      href="/static/styles/css/index.css"
     />
 
-    <script src="./static/javascript/_app.js"></script>
+    <script type="text/javascript" src="/static/javascript/_app.js"></script>
   </head>
 
   <body>
     <main>
-      <div class="dock" x-import="./static/components/NavBar.html"></div>
+      <div class="dock" x-import="/static/components/_app/NavBar.html"></div>
       <div class="dock"></div>
-      <div class="dock"></div>
+      <div
+        class="dock"
+        x-block="bottom-dock"
+        x-import="/static/components/_app/Footer.html"
+      ></div>
 
       <div class="guideRails">
         <span></span>
@@ -30,7 +34,7 @@
     </main>
 
     <script>
-      includeHTML();
+      importComponents();
       checkLoginSession();
     </script>
   </body>

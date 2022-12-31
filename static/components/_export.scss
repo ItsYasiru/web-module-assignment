@@ -1,2 +1,6 @@
-@import "./NavBar.scss";
-@import "./LoginForm.scss";
+@import "./_app/NavBar.scss";
+@import "./_app/Footer.scss";
+@import "./_app/SearchBar.scss";
+
+@import "./login/LoginForm.scss";
+@import "./index/ProductListing.scss";

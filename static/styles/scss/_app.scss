@@ -163,6 +163,31 @@ main {
   }
 }
 
+// AppLayout
+
+.AppLayout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+
+  gap: 15px;
+
+  & > * {
+    @include component;
+
+    height: 100%;
+    padding: 15px;
+  }
+
+  .sideColumn {
+    width: 20%;
+  }
+  .mainColumn {
+    width: 80%;
+  }
+}
+
 // Utility classes
 
 .hide {
@@ -181,6 +206,12 @@ main {
 
 @media screen and (max-width: $breakpoint-tablet) {
   *[x-hide-tablet="true"] {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  *[x-hide-desktop="true"] {
     display: none !important;
   }
 }

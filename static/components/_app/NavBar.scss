@@ -1,4 +1,4 @@
-@import "_import.scss";
+@import "../_import.scss";
 
 .NavBar {
   @include component;
@@ -122,14 +122,6 @@
         box-shadow: component__shadow(5px);
         border-radius: 50%;
       }
-    }
-  }
-}
-
-@media screen and (max-width: $breakpoint-tablet) {
-  .NavBar {
-    ul {
-      display: none;
     }
   }
 }

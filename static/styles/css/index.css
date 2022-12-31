@@ -152,13 +152,26 @@ h6 {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 992px) {
-  .NavBar ul {
-    display: none;
-  }
+.Footer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
+.Footer p {
+  display: block;
+  font-size: 14px;
+}
+
+.SearchBar input {
+  padding: 5px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
+  border-radius: 60px;
+  background: transparent;
+}
+
 .LoginForm {
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -251,6 +264,10 @@ h6 {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+.ProductListing {
+  display: flex;
 }
 
 body {
@@ -366,6 +383,28 @@ main .guideRails span:nth-child(4) {
     bottom: 0;
   }
 }
+.AppLayout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+}
+.AppLayout > * {
+  border-radius: 5px;
+  color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  height: 100%;
+  padding: 15px;
+}
+.AppLayout .sideColumn {
+  width: 20%;
+}
+.AppLayout .mainColumn {
+  width: 80%;
+}
+
 .hide {
   display: none !important;
 }
@@ -381,6 +420,11 @@ main .guideRails span:nth-child(4) {
 }
 @media screen and (max-width: 992px) {
   *[x-hide-tablet=true] {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  *[x-hide-desktop=true] {
     display: none !important;
   }
 }/*# sourceMappingURL=index.css.map */

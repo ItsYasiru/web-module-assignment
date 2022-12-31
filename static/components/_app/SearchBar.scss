@@ -1,0 +1,11 @@
+@import "../_import.scss";
+
+.SearchBar {
+  input {
+    padding: 5px 20px;
+
+    border: 1px solid $secondary__color;
+    border-radius: 60px;
+    background: transparent;
+  }
+}

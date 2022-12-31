@@ -4,7 +4,9 @@
     <span><h1>Fakes</h1></span>
   </header>
 
-  <ul>
+  <ul x-hide-tablet="true">
+    <li x-hide-desktop="true"><span></span><span></span><span></span></li>
+
     <li><a href="/index.html">Home</a></li>
     <li><a href="/market.html">Market</a></li>
     <li><a href="/customer-care.html">Customer Care</a></li>
@@ -21,8 +23,8 @@
       <img
         width="35"
         height="35"
-        id="x-data-user__profile__picture"
         alt="Profile picture"
+        id="x-data-user__profile__picture"
         src="/static/media/profile-picture.png"
       />
     </span>
