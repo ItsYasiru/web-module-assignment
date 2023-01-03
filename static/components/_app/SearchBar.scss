@@ -1,11 +1,30 @@
 @import "../_import.scss";
 
 .SearchBar {
-  input {
-    padding: 5px 20px;
+  .input-container {
+    width: 100%;
+    position: relative;
 
-    border: 1px solid $secondary__color;
-    border-radius: 60px;
-    background: transparent;
+    input {
+      width: 100%;
+      padding: 5px 10px;
+
+      border: none;
+      border-radius: 5px;
+      background: $primary__background;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    .icon {
+      position: absolute;
+
+      top: 50%;
+      right: 10px;
+
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
   }
 }

@@ -47,6 +47,10 @@ h6 {
   isolation: isolate;
 }
 
+button {
+  cursor: pointer;
+}
+
 .NavBar {
   border-radius: 5px;
   color: #000000;
@@ -164,14 +168,30 @@ h6 {
   font-size: 14px;
 }
 
-.SearchBar input {
-  padding: 5px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.5019607843);
-  border-radius: 60px;
-  background: transparent;
+.SearchBar .input-container {
+  width: 100%;
+  position: relative;
+}
+.SearchBar .input-container input {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #eff0f5;
+}
+.SearchBar .input-container input:focus-visible {
+  outline: none;
+}
+.SearchBar .input-container .icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
 }
 
 .LoginForm {
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -268,6 +288,96 @@ h6 {
 
 .ProductListing {
   display: flex;
+}
+
+.ChatBox {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.ChatBox .inner {
+  border-radius: 5px;
+  color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+}
+.ChatBox .inner h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.ChatBox .inner .messagesBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 92%;
+  padding: 10px 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.ChatBox .inner .messagesBox::-webkit-scrollbar {
+  display: none;
+}
+.ChatBox .inner .messagesBox .messageBox {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.ChatBox .inner .messagesBox .messageBox p {
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: #eff0f5;
+}
+.ChatBox .inner .messagesBox .messageBox label {
+  padding-inline: 20px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+.ChatBox .inner .messagesBox .left {
+  margin-right: auto;
+}
+.ChatBox .inner .messagesBox .right {
+  margin-left: auto;
+}
+.ChatBox .inner .messagesBox .right label {
+  margin-left: auto;
+}
+.ChatBox .inner .typingInput {
+  position: relative;
+  height: 8%;
+}
+.ChatBox .inner .typingInput input {
+  width: 100%;
+  height: 100%;
+  padding-inline: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #eff0f5;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.ChatBox .inner .typingInput input:focus-visible {
+  border: none;
+  outline: none;
+}
+.ChatBox .inner .typingInput button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border: none;
+  background: none;
+  transform: translateY(-50%);
+}
+.ChatBox .inner .typingInput button img {
+  width: 15px;
+  height: 15px;
 }
 
 body {

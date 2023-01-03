@@ -132,3 +132,5 @@ function authenticateSession(username, password) {
 function loginFormSubmit(event) {
   console.log(event);
 }
+
+function sendMessage(message: String) {}
